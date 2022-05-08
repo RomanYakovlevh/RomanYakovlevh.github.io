@@ -45,6 +45,6 @@ def get_decrypted_data(encrypted_password):
 
 if __name__ == "__main__":
     
-    db_path = '/tmp/data-chrome-test-1/Default/Login Data'
+    db_path = '/home/garry/.config/chromium/Default/Login Data'
     for url, user, encrypted_password in get_encrypted_data(db_path):
         get_decrypted_data(encrypted_password)
